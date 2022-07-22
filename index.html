@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+</head>
+<body>
+
+  <header class="navbar">
+    <img src="images/logo.svg" alt="" class="brand">
+
+    <div class="nav">
+      <button class="dropdown">Features <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+        <path class="dropdown-ico" stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" />
+      </svg>
+
+      <div class="dropdown-menu features-menu" id="features-menu">
+        <a href=""><img src="images/icon-todo.svg" alt=""> Todo List</a>
+        <a href=""><img src="images/icon-calendar.svg" alt=""> Calender</a>
+        <a href=""><img src="images/icon-reminders.svg" alt=""> Reminders</a>
+        <a href=""><img src="images/icon-planning.svg" alt=""> Planning</a>
+      </div>
+
+      </button>
+
+      <button class="dropdown">Company <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+        <path class="dropdown-ico" stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" />
+      </svg>
+    
+      <div class="dropdown-menu" id="company-menu">
+        <a href="">History</a>
+        <a href="">Our Team</a>
+        <a href="">Blog</a>
+      </div>
+
+      </button>
+
+      <a href="">Careers</a>
+      <a href="">About</a>
+    </div>
+
+    <div class="nav-social">
+      <a href="" class="login">Login</a>
+      <a href="" class="register">Register</a>
+    </div>
+
+
+    <!-- Mobile Navbar -->
+
+    <div class="mobile-nav">
+      <button class="hamburger" onclick="openMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+          <div class="mobile-nav-menu" id="mobile-nav-menu">
+            <button class="x-mark" id="x-mark" onclick="closeMenu()">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          
+            <div class="nav-items">
+              <button class="dropdown">Features <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                  <path class="dropdown-ico" stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" />
+                </svg>
+          
+                <div class="dropdown-menu-mobile features-menu" id="features-menu-mobile">
+                  <a href=""><img src="images/icon-todo.svg" alt=""> Todo List</a>
+                  <a href=""><img src="images/icon-calendar.svg" alt=""> Calender</a>
+                  <a href=""><img src="images/icon-reminders.svg" alt=""> Reminders</a>
+                  <a href=""><img src="images/icon-planning.svg" alt=""> Planning</a>
+                </div>
+          
+              </button>
+          
+              <button class="dropdown">Company <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                  <path class="dropdown-ico" stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" />
+                </svg>
+          
+                <div class="dropdown-menu-mobile" id="company-menu-mobile">
+                  <a href="">History</a>
+                  <a href="">Our Team</a>
+                  <a href="">Blog</a>
+                </div>
+          
+              </button>
+          
+              <a href="">Careers</a>
+              <a href="">About</a>
+            </div>
+          
+            <div class="nav-social-mobile">
+              <a href="" class="login">Login</a>
+              <a href="" class="register">Register</a>
+            </div>
+          
+          </div>
+
+    </div>
+
+  </header>
+
+  <div class="main-content">
+    <div class="content">
+      <h1>Make remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes,
+      create team rituals, and watch productivity soar.</p>
+
+      <button class="cta-btn">Learn More</button>
+
+      <div class="sponsors">
+        <img src="images/client-databiz.svg" alt="">
+        <img src="images/client-audiophile.svg" alt="">
+        <img src="images/client-meet.svg" alt="">
+        <img src="images/client-maker.svg" alt="">
+      </div>
+
+    </div>
+
+    <div class="hero-img-container">
+      <img src="images/image-hero-desktop.png" alt="" class="hero-img">
+      <img src="images/image-hero-mobile.png" alt="" class="hero-img-mobile">
+    </div>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/eight-08" target="_blank">Hassan Sajid</a>.
+  </div>
+
+  <script>
+
+
+    function openMenu() {
+      document.getElementById("mobile-nav-menu").style.visibility = "visible";
+      document.getElementById("mobile-nav-menu").style.opacity = "1";
+    }
+
+    function closeMenu() {
+        document.getElementById("mobile-nav-menu").style.visibility = "collapse";
+        document.getElementById("mobile-nav-menu").style.opacity = "0";
+      }
+
+  </script>
+
+  <script src="https://kit.fontawesome.com/1701190787.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
